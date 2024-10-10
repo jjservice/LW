@@ -3,7 +3,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     margin: 0% auto;
-    background: linear-gradient(to left, black,black,black,darkblue,lightgreen,maroon,black,black,black);
+    background: linear-gradient(to right, black,black,black,darkblue,lightgreen,maroon,black,black,black);
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     height: 100vh;
@@ -95,7 +95,16 @@ body {
     text-shadow: 2px 2px 10px gold;
     
  }
-
+ #jj2{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: maroon;
+    text-shadow: 2px 2px 10px gold;
+ }
+  #jj span{
+    color: rgba(163, 139, 3, 0.623);
+  }
  p{
     color: white;
  }
