@@ -88,7 +88,7 @@ body {
     background-size: cover;
  }
  #jj{
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
     font-weight: bold;
     color: maroon;
@@ -103,7 +103,14 @@ body {
     text-shadow: 2px 2px 10px gold;
  }
   #jj span{
-    color: rgba(163, 139, 3, 0.623);
+    color: rgba(177, 131, 16, 0.925);
+    border-radius: 100px;
+    background: linear-gradient(to right, black,black,black,darkblue,lightgreen,maroon,black,black,black);
+    background-color: lightgreen;
+    box-shadow: 2px 2px 4px darkblue;
+    
+    padding: 0 2px;
+    
   }
  p{
     color: white;
