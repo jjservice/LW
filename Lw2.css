@@ -1,133 +1,152 @@
-body {
-    color: maroon;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    margin: 0% auto;
-    background: linear-gradient(to right, black,black,black,darkblue,lightgreen,maroon,black,black,black);
-    border-radius: 25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 100vh;
-    max-width: 100vh;
-    background-position: center;
-    border-radius: 10px;
-    
-    }
-  
-    h1{ 
-    font-size: 50px;
-    margin-bottom: 20px;
-    color: white;
-    text-shadow: 2px 2px 4px gold;
-    display: flex;
-    justify-content: center;
-    letter-spacing: 2px;
-    background-image: url(MusicGig.gif);
-    background-position: top;
-    background-size: cover;
-    box-shadow: 2px 2px 10px lightgreen;
-    border-radius: 100%;
-    border: 4px solid darkblue;
-    
-    
-     }
-    h1 span ion-icon{
-     color: rgba(255, 217, 0, 0.705);
-     border-bottom: 2px solid gold;
-     box-shadow: 2px 4px 6px maroon;
-     border-radius: 50px;
-     background-image: url(lollipop_3GIF.gif);
-     background-size: cover;
-     background-color: transparent;
+ *{
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+}
+body{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: black;
+   
+}
+h1{
+   position: absolute;
+   top: 10px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   font-size: 40px;
+   color: white;
+   text-shadow: 2px 2px 4px lightcoral;
+   border-radius: 100%;
+   padding: 5px 10px;
+   background: radial-gradient(circle,  #ff2770,black,blue);
+   box-shadow: 0px 2px 20px gold;
+   width: 80%;
+   border: 4px solid #ff276fd0;
+   
+}
+h1 ion-icon{
+   color: rgba(255, 217, 0, 0.527);
+   border-bottom: 2px solid gold;
+   box-shadow: 2px 2px 10px #ff2770;
+   border-radius: 100px;
+   background-image: url(lollipop_3GIF.gif);
+   background-position: center;
+   background-size: cover;
+}
+#jj{
+   position: absolute;
+   bottom: 40px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   font-size: 20px;
+   color: white;
+   text-shadow: 2px 2px 4px lightcoral;
+   box-shadow: 0px 2px 20px gold;
+   border-radius: 100%;
+   background: radial-gradient(circle,  #ff2770,black,blue);
+   width: 300px;
+   border: 4px solid #ff276fd0;
+   
+}
+#jj ion-icon{
+   color: rgba(255, 217, 0, 0.527);
+   border-bottom: 2px solid gold;
+   box-shadow: 2px 2px 10px #ff2770;
+   border-radius: 100px;
+   background-image: url(lollipop_3GIF.gif);
+   background-position: center;
+   background-size: cover;
+}
 
-      }
-      h1 span ion-icon:hover{
-        color: maroon;
-        text-shadow: 3px 2px 5px gold;
-        box-shadow: 3px 3px 10px lightblue;
+.Welcome-Box{
+   position: absolute;
+   width: 365px;
+   height: 365px;
+   background: repeating-conic-gradient(from var(--a),#ff2770 0%, #ff2770 5%,
+   transparent 5%, transparent 40%, #ff2770 50%);
+   animation: animate 4s linear infinite;
+   border-radius: 50px;
+   box-shadow: 0px 2px 20px gold;
+}
+@property --a{
+   syntax: '<angle>';
+   inherits: false;
+   initial-value: 0deg;
+}
+@keyframes animate {
+   0%{
+       --a: 0deg;
+   }
+   100%{
+       --a: 360deg;
+   }
+}
+.Welcome-Box::before{
+   content: ''; 
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: repeating-conic-gradient(from var(--a),blue 0%,blue 5%,transparent 5%, transparent 40%, blue 50%);
+   animation: animate 4s linear infinite;
+   animation-delay: -1s;
+   border-radius: 50px;
+}
+.Welcome-Box::after{
+   content: 'Welcome to the experience';
+   text-align: center;
+   color: white;
+   text-shadow: 2px 2px 4px lightcoral;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 20px;
+   align-content: space-around;
+   position: absolute;
+   inset: 20px;
+   background-color: rgba(0, 0, 0, 0.856);
+   background-blend-mode: overlay;
+   border-radius: 50px;
+   border: 10px solid rgba(0, 0, 139, 0.342);
+   background-image: url(DancingGifff111.gif);
+   background-position: center;
+   background-size: 90%;
+   background-repeat: no-repeat;
+
+}
+.homebtn{
+   position: relative;
+   font-size: 100px;
+   border: none;
+   border-radius: 5px;
+   padding: 100px 110px;
+   cursor: pointer;
+   border-radius: 50px;
+   transition: color 0.2s, box-shadow 0.2s;
+   background-color: transparent;
+   background-blend-mode: hue;
+   color: #ff276f62;
+   box-shadow: 0px 2px 20px gold;
+   
+
+}
+.homebtn:hover{
+   color: rgba(255, 217, 0, 0.514);
+   box-shadow: 0px 2px 20px gold;
+   transform: scale(1.15);
+   transition: 0.5s;
+}
+.homebtn:hover::after{
+   content: 'GO';
+   position: absolute;
+   font-size: 40px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.homebtn:active{
+   color: gold;
+}
  
-      }
-     h1:hover{
-     color: maroon;
-     text-shadow: 3px 2px 5px gold;
-       }
-       form {
-    box-shadow: 2px 4px 10px lightgreen;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 30px;
-    background-color: transparent;
-    
-    }
-
-    .button{
-        color: white;
-        text-shadow: 2px 2px 4px gold;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 30px;
-        border: 6px solid maroon;
-        padding: 1px 40px;
-        border-radius: 100%;
-        background-image: url(MusicGig.gif);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 2px 2px 10px lightseagreen;
-        cursor: pointer;
-    }
-
-    .button:hover{
-    color: rgba(216, 112, 147, 0.685);
-    text-shadow: 2px 2px 10px black;
-    border: 6px solid gold;
-    box-shadow: 2px 2px 10px lightblue;
-    transform: scale(1.10);
-    transition: 0.8s;
-    border-radius: 10px;
-    background-image: url(MuahPic.gif);
-    background-position: center;
-    background-size: cover;
- }
- #jj{
-    font-size: 18px;
-    font-style: italic;
-    font-weight: bold;
-    color: maroon;
-    text-shadow: 2px 2px 10px gold;
-    
- }
- #jj2{
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
-    color: maroon;
-    text-shadow: 2px 2px 10px gold;
- }
-  #jj span{
-    color: rgba(177, 131, 16, 0.925);
-    border-radius: 100px;
-    background: linear-gradient(to right, black,black,black,darkblue,lightgreen,maroon,black,black,black);
-    background-color: lightgreen;
-    box-shadow: 2px 2px 4px darkblue;
-    
-    padding: 0 2px;
-    
-  }
- p{
-    color: white;
- }
- p, a{
-     text-shadow: 2px 2px 4px gold;
- }
- p, a:hover{
-     color: gold;
-     text-shadow: 2px 2px 10px maroon;
- }
- h3{
-    color: whitesmoke;
-    text-shadow: 2px 2px 4px gold;
- }
- h3:hover{
-     color: maroon;
-     text-shadow: 3px 2px 5px gold;
- }
