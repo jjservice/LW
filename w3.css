@@ -221,15 +221,23 @@ h2{
     font-size: 18px;
     font-style: italic;
     font-weight: bold;
-    color: maroon;
-    text-shadow: 2px 2px 10px gold;
+    color: wheat;
+    text-shadow: 2px 2px 10px darkblue;
     margin-bottom: 10px;
     
+ }
+ body.light #jj{
+    color: maroon;
+    text-shadow: 2px 2px 10px gold;
  }
  #jj2{
     font-size: 15px;
     font-style: italic;
     font-weight: bold;
+    color: wheat;
+    text-shadow: 2px 2px 10px darkblue;
+ }
+ body.light #jj2{
     color: maroon;
     text-shadow: 2px 2px 10px gold;
  }
@@ -246,9 +254,6 @@ h2{
  p{
     color: white;
  }
- p, a{
-     text-shadow: 2px 2px 4px gold;
- }
  p, a:hover{
      color: gold;
      text-shadow: 2px 2px 10px maroon;
@@ -258,8 +263,22 @@ h2{
     text-shadow: 2px 2px 4px gold;
     margin-bottom: 10px;
  }
+ #user-name{
+    color: white;
+    text-shadow: 2px 2px 4px gold;
+ }
  body.light h3{
     color: rgba(255, 187, 0, 0.842);
+    text-shadow: 2px 2px 2px darkblue;
+ 
+}
+#show-password-recovery{
+  color: gold;
+  text-shadow: 2px 2px 2px darkblue;
+   padding: 10px;
+}
+#show-email-recovery{
+    color: gold;
     text-shadow: 2px 2px 2px darkblue;
 }
 

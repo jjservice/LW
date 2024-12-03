@@ -42,6 +42,30 @@
         <button id="show-login">Already have an account? Login</button>
     </div>
 
+    <!-- Password Recovery Form -->
+<div class="password-recovery-container" style="display: none;">
+    <h2>Password Recovery</h2>
+    <form id="passwordRecoveryForm">
+        <label for="recoveryEmail">Enter your email:</label>
+        <input type="email" id="recoveryEmail" required>
+        <button type="submit">Send Recovery Link</button>
+    </form>
+    <p id="password-recovery-error" style="color: red;"></p>
+    <button id="show-login">Back to Login</button>
+</div>
+
+<!-- Email Recovery Form -->
+<div class="email-recovery-container" style="display: none;">
+    <h2>Email Recovery</h2>
+    <form id="emailRecoveryForm">
+        <label for="emailRecoveryEmail">Enter your email:</label>
+        <input type="email" id="emailRecoveryEmail" required>
+        <button type="submit">Recover Email</button>
+    </form>
+    <p id="email-recovery-error" style="color: red;"></p>
+    <button id="show-login">Back to Login</button>
+</div>
+
     <!-- Music Player -->
     <div class="music-player-container" style="display:none;">
         <h1 onclick="toggleLights()">LOLLIP<span><ion-icon name="headset-sharp"></ion-icon></span>P</h1>
@@ -55,8 +79,11 @@
     <p id="jj2">LollitA<ion-icon name="bonfire-sharp"></ion-icon></p>
         </div>
     </div>
+    <!-- Add links in your login form -->
+<a href="#" id="show-password-recovery">Forgot Password?</a>
+<a href="#" id="show-email-recovery">Can't Access Email?</a>
 </body>
-<script src="w3.js"></script>
+<script src="w4.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>

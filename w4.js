@@ -140,3 +140,11 @@ document.getElementById('emailRecoveryForm').addEventListener('submit', function
         document.getElementById('email-recovery-error').textContent = "Email not found. Please check your email address.";
     }
 });
+
+
+///Light Section////
+
+function toggleLights(){
+    const body = document.querySelector('body');
+    body.classList.toggle('light');
+}
