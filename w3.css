@@ -17,9 +17,9 @@ body {
     background-position: center;
     border-radius: 10px;
     }
-body.light{
-    background: linear-gradient(to right,black,darkblue,lightgreen,maroon,black);
-}
+    body.light{
+        background: linear-gradient(to right,black,darkblue,lightgreen,maroon,black);
+    }
 span{
     color: maroon;
 }
