@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=, initial-scale=1.0">
-<link rel="stylesheet" href="w.css">    
 <head>
-    <title>LOLLIPOP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Login</title>
+    <link rel="stylesheet" href="w3.css">
 </head>
-<body>
+<body class="light">
+    <!-- Login Form -->
+    <div class="login-container">
+        <h2 onclick="toggleLights()">LOLLIP<ion-icon name="headset-sharp"></ion-icon>P</h2>
+        <h3>LOGIN</h3>
+        <form id="loginForm">
+            <span><ion-icon name="person"></ion-icon></span><br>
+            <input type="text" id="loginUsername" placeholder="Username" required />
+            <br>
+            <span><ion-icon name="mail"></ion-icon></span><br>
+            <input type="email" id="loginEmail" placeholder="Email" required />
+            <br>
+            <span><ion-icon name="lock-closed"></ion-icon></span><br>
+            <input type="password" id="loginPassword" placeholder="Password" required />
+             <br>
+            <button class="login-btn" type="submit">Login</button>
+        </form>
+        <p id="login-error-message"></p>
+        <button id="show-register">Don't have an account? Register Now!</button>
+    </div>
 
-    <h1>LOLLIP<span><ion-icon name="headset-sharp"></ion-icon></span>P</h1>
+    <!-- Registration Form -->
+    <div class="register-container" style="display:none;">
+        <h2>Register for the Fun!</h2>
+        <form id="registerForm">
+            <input type="text" id="registerUsername" placeholder="Username" required />
+            <input type="email" id="registerEmail" placeholder="Email" required />
+            <input type="email" id="registerEmailConfirm" placeholder="Confirm Email" required />
+            <input type="password" id="registerPassword" placeholder="Password" required />
+            <input type="password" id="registerPasswordConfirm" placeholder="Confirm Password" required />
+            <button type="submit">Register</button>
+        </form>
+        <p id="register-error-message"></p>
+        <button id="show-login">Already have an account? Login</button>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player-container" style="display:none;">
+        <h1 onclick="toggleLights()">LOLLIP<span><ion-icon name="headset-sharp"></ion-icon></span>P</h1>
 
     <p id="jj">JJPoweredIT<span><ion-icon name="bonfire-outline"></ion-icon></span></p>
   
-    <h3>"Welcome to the experience"</h3>
+    <h3>"Welcome to the experience, <span id="user-name"></span>!"</h3>
     <form>
         <a href="https://jjservice.github.io/L2/1.html"><input class="button" type="button" value="GO"></a>
     </form>
     <p id="jj2">LollitA<ion-icon name="bonfire-sharp"></ion-icon></p>
-    
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    
+        </div>
+    </div>
 </body>
+<script src="w3.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>

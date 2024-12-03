@@ -1,77 +1,273 @@
-/* Basic CSS for login and music player styling */
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(to right,black,black,darkblue,maroon,black,black);
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0% auto;
+    background: linear-gradient(to right, black,black,darkblue,maroon,black,black);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    max-width: 100vh;
+    background-position: center;
+    border-radius: 10px;
+    }
 body.light{
     background: linear-gradient(to right,black,darkblue,lightgreen,maroon,black);
 }
+span{
+    color: maroon;
+}
+body.light span{
+    color: darkgoldenrod;
+}
 
 .login-container {
+    margin: 0% auto;
     text-align: center;
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 370px;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0px 2px 20px lightskyblue;
+    background-color: rgba(255, 255, 255, 0.315);
+    border: 6px solid rgba(72, 0, 139, 0.534);
+}
+body.light .login-container{
+    box-shadow: 0px 2px 10px yellowgreen;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+.music-player-container{
+    margin: 0% auto;
+    text-align: center;
+    padding: 25px;
 }
 
 input {
+    margin: 0% auto;
+    text-align: center;
     padding: 10px;
     margin: 10px 0;
     width: 100%;
-    border: 1px solid #ddd;
+    border: 2px solid lightskyblue;
     border-radius: 5px;
 }
-
-button {
+body.light input{
+    border: 2px solid gold;
+}
+.login-btn{
+    margin: 0% auto;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: rgb(32, 32, 199);
     color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-.music-player-container {
-    text-align: center;
-    background: #fff;
-    padding: 30px;
+    border: 1px solid yellowgreen;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#playlist {
-    list-style-type: none;
-    padding: 0;
-}
-
-#playlist li {
     cursor: pointer;
-    margin: 10px 0;
-    background: #f2f2f2;
+    width: 50%;
+}
+.login-btn:hover {
+    background-color: darkblue;
+}
+#show-register{
+    margin: 0% auto;
     padding: 10px;
-    border-radius: 5px;
+    margin: 10px;
+    background-color: rgba(0, 0, 139, 0.534);
+    color: white;
+    border: none;
+    border-radius: 100%;
+    border-bottom: 2px solid white;
+    box-shadow: 0px 2px 10px lightgreen;
+    cursor: pointer;
+    width: 80%;
+    cursor: pointer;
+}
+body.light #show-register{
+    background-color: rgb(32, 43, 199);
+    box-shadow: 0px 2px 10px yellowgreen;
+    border: 2px solid rgba(245, 222, 179, 0.822);
+}
+#show-register:hover {
+    background-color: darkblue;
+}
+body.light #show-register:hover {
+    background-color: darkblue;
 }
 
-#playlist li:hover {
-    background-color: #ddd;
-}
 /* Same as before for body and login container */
 .register-container {
     text-align: center;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.315);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: none;
+}
+h2{ 
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px gold;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    background-image: url(MusicGig.gif);
+    background-position: top;
+    background-size: cover;
+    box-shadow: 2px 2px 10px lightgreen;
+    border-radius: 100%;
+    border: 4px solid darkblue;
+    cursor: pointer;
+    
+    
+     }
+    h2 ion-icon{
+     color: rgba(255, 217, 0, 0.705);
+     border-bottom: 2px solid gold;
+     box-shadow: 2px 4px 6px maroon;
+     border-radius: 50px;
+     background-image: url(lollipop_3GIF.gif);
+     background-size: cover;
+     background-color: transparent;
+ 
+      }
+  
+    h1{ 
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px gold;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    background-image: url(MusicGig.gif);
+    background-position: top;
+    background-size: cover;
+    box-shadow: 2px 2px 10px lightgreen;
+    border-radius: 100%;
+    border: 4px solid darkblue;
+    cursor: pointer;
+    
+    
+     }
+    h1 span ion-icon{
+     color: rgba(255, 217, 0, 0.705);
+     border-bottom: 2px solid gold;
+     box-shadow: 2px 4px 6px maroon;
+     border-radius: 50px;
+     background-image: url(lollipop_3GIF.gif);
+     background-size: cover;
+     background-color: transparent;
+ 
+      }
+      h1 span ion-icon:hover{
+        color: maroon;
+        text-shadow: 3px 2px 5px gold;
+        box-shadow: 3px 3px 10px lightblue;
+ 
+      }
+     h1:hover{
+     color: maroon;
+     text-shadow: 3px 2px 5px gold;
+       }
+    form {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    box-shadow: 2px 4px 10px lightgreen;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: transparent;
+    
+    }
+ 
+    .button{
+        color: white;
+        text-shadow: 2px 2px 4px gold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        border: 6px solid maroon;
+        padding: 1px 40px;
+        border-radius: 100%;
+        background-image: url(MusicGig.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 2px 10px lightseagreen;
+        cursor: pointer;
+    }
+ 
+    .button:hover{
+    color: rgba(216, 112, 147, 0.685);
+    text-shadow: 2px 2px 10px black;
+    border: 6px solid gold;
+    box-shadow: 2px 2px 10px lightblue;
+    transform: scale(1.10);
+    transition: 0.8s;
+    border-radius: 10px;
+    background-image: url(MuahPic.gif);
+    background-position: center;
+    background-size: cover;
+ }
+ #jj{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    color: maroon;
+    text-shadow: 2px 2px 10px gold;
+    margin-bottom: 10px;
+    
+ }
+ #jj2{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: maroon;
+    text-shadow: 2px 2px 10px gold;
+ }
+  #jj span{
+    color: rgba(177, 131, 16, 0.925);
+    border-radius: 100px;
+    background: linear-gradient(to right, black,black,black,darkblue,lightgreen,maroon,black,black,black);
+    background-color: lightgreen;
+    box-shadow: 2px 2px 4px darkblue;
+    
+    padding: 0 2px;
+    
+  }
+ p{
+    color: white;
+ }
+ p, a{
+     text-shadow: 2px 2px 4px gold;
+ }
+ p, a:hover{
+     color: gold;
+     text-shadow: 2px 2px 10px maroon;
+ }
+ h3{
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px gold;
+    margin-bottom: 10px;
+ }
+ body.light h3{
+    color: rgba(255, 187, 0, 0.842);
+    text-shadow: 2px 2px 2px darkblue;
+}
+
+@media (min-width: 768px) {
+    .login-container {
+        margin: 0% auto;
+        margin-top: 20px;
+        width: 650px;
+        padding: 25px;
+    }
 }

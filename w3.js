@@ -1,8 +1,13 @@
-// Dummy user data for login and registration
-let users = [
+// Load users from localStorage, or set to an empty array if none exist
+let users = JSON.parse(localStorage.getItem('users')) || [
     { username: "user1", email: "user1@example.com", password: "password123" },
     { username: "user2", email: "user2@example.com", password: "password456" }
 ];
+
+// Save users to localStorage
+function saveUsers() {
+    localStorage.setItem('users', JSON.stringify(users));
+}
 
 // Show registration form
 document.getElementById('show-register').addEventListener('click', () => {
@@ -71,15 +76,16 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     } else {
         // Register the new user
         users.push({ username, email, password });
+        saveUsers(); // Save updated user list to localStorage
         document.querySelector('.register-container').style.display = 'none';
         document.querySelector('.login-container').style.display = 'block';
         alert("Registration successful! You can now log in.");
     }
 });
 
-///Light Section/////
+///Light Section////
 
-function ToggleLights(){
+function toggleLights(){
     const body = document.querySelector('body');
     body.classList.toggle('light');
 }
