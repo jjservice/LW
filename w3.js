@@ -77,33 +77,6 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     }
 });
 
-// Playlist interaction
-const playlistItems = document.querySelectorAll('#playlist li');
-const audioPlayer = document.getElementById('audioPlayer');
-const audioSource = document.getElementById('audioSource');
-const playButton = document.getElementById('playButton');
-const pauseButton = document.getElementById('pauseButton');
-
-// Add event listeners to playlist items
-playlistItems.forEach(item => {
-    item.addEventListener('click', () => {
-        const song = item.getAttribute('data-song');
-        audioSource.src = song; // Set song source
-        audioPlayer.load();
-        audioPlayer.play();
-    });
-});
-
-// Play and Pause functionality
-playButton.addEventListener('click', () => {
-    audioPlayer.play();
-});
-
-pauseButton.addEventListener('click', () => {
-    audioPlayer.pause();
-});
-
-
 ///Light Section/////
 
 function ToggleLights(){

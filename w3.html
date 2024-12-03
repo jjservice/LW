@@ -6,10 +6,10 @@
     <title>Music Player Login</title>
     <link rel="stylesheet" href="w3.css">
 </head>
-<body>
+<body class="light">
     <!-- Login Form -->
     <div class="login-container">
-        <h2>Login to Music Player</h2>
+        <h2 onclick="ToggleLights()">Login to Music Player</h2>
         <form id="loginForm">
             <input type="text" id="loginUsername" placeholder="Username" required />
             <input type="email" id="loginEmail" placeholder="Email" required />
@@ -37,22 +37,17 @@
 
     <!-- Music Player -->
     <div class="music-player-container" style="display:none;">
-        <h2>Welcome, <span id="user-name"></span>!</h2>
-        <div id="music-player">
-            <audio id="audioPlayer" controls>
-                <source id="audioSource" src="" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
-            <button id="playButton">Play</button>
-            <button id="pauseButton">Pause</button>
-            <ul id="playlist">
-                <li data-song="song1.mp3">Song 1</li>
-                <li data-song="song2.mp3">Song 2</li>
-            </ul>
+        <h1>LOLLIP<span><ion-icon name="headset-sharp"></ion-icon></span>P</h1>
+
+    <p id="jj">JJPoweredIT<span><ion-icon name="bonfire-outline"></ion-icon></span></p>
+  
+    <h3>"Welcome to the experience, <span id="user-name"></span>!"</h3>
+    <form>
+        <a href="https://jjservice.github.io/L2/1.html"><input class="button" type="button" value="GO"></a>
+    </form>
+    <p id="jj2">LollitA<ion-icon name="bonfire-sharp"></ion-icon></p>
         </div>
     </div>
-
-   
 </body>
 <script src="w3.js"></script>
 </html>
