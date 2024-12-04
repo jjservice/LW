@@ -305,6 +305,7 @@ h2{
 .Email-Recovery-title{
     color: wheat;
     text-shadow: 2px 2px 2px darkblue;
+    font-size: 20px;
 }
 .Recover-Pass-Title{
     margin: 0% auto;
@@ -316,10 +317,11 @@ h2{
     margin-bottom: 20px;
     box-shadow: 0px 2px 10px darkgray;
 }
+
 .Enter-Email{
    margin: 0% auto;
    color: wheat;
-   font-size: 18px;
+   font-size: 20px;
    text-shadow: 1px 1px 2px darkblue;
    border-radius: 6px;
    padding: 10px;
@@ -341,7 +343,7 @@ h2{
 .Recover-Email-btn:hover{
     background: darkblue;
 }
-.Email-Recovery--Main-Title{
+.Email-Recovery-Main-Title{
     margin: 0% auto;
     justify-content: center;
     align-items: center;
@@ -355,6 +357,11 @@ h2{
     margin-top: 10px;
 }
 #passwordRecoveryForm{
+    max-width: 370px;
+    padding: 25px;
+    height: 150px;
+}
+#emailRecoveryForm{
     max-width: 370px;
     padding: 25px;
     height: 150px;
@@ -380,4 +387,15 @@ h2{
         margin-bottom: 20px;
         box-shadow: 0px 2px 10px darkgray;
     }
+    .Email-Recovery-Main-Title{
+        margin: 0% auto;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 2px 10px darkgray;
+    }
+    
 }
