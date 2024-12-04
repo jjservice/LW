@@ -217,7 +217,7 @@ h2{
     background-size: cover;
  }
  #jj{
-    font-size: 18px;
+    font-size: 15px;
     font-style: italic;
     font-weight: bold;
     color: wheat;
@@ -354,6 +354,11 @@ h2{
 .recoveryEmail-css{
     margin-top: 10px;
 }
+#passwordRecoveryForm{
+    max-width: 370px;
+    padding: 25px;
+    height: 150px;
+}
 
 @media (min-width: 768px) {
     .login-container {
@@ -361,5 +366,18 @@ h2{
         margin-top: 20px;
         width: 650px;
         padding: 20px;
+    }
+    #passwordRecoveryForm{
+        min-width: 500px;
+    }
+    .Recover-Pass-Title{
+        margin: 0% auto;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 2px 10px darkgray;
     }
 }
