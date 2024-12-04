@@ -50,7 +50,7 @@
     <h2 class="Recover-Pass-Title">Password Recovery</h2>
     <form id="passwordRecoveryForm">
         <label class="Enter-Email" for="recoveryEmail">Enter your email:</label>
-        <input type="email" id="recoveryEmail" required>
+        <input class="recoveryEmail-css" type="email" id="recoveryEmail" required>
         <button type="submit" id="Recovery-Link-Btn">Send Recovery Link</button>
     </form>
     <p id="password-recovery-error" style="color: red;"></p>
@@ -59,11 +59,11 @@
 
 <!-- Email Recovery Form -->
 <div class="email-recovery-container" style="display: none;">
-    <h2>Email Recovery</h2>
+    <h2 class="Email-Recovery--Main-Title">Email Recovery</h2>
     <form id="emailRecoveryForm">
         <label  class="Email-Recovery-title" for="emailRecoveryEmail">Enter your email:</label>
         <input type="email" id="emailRecoveryEmail" required>
-        <button type="submit">Recover Email</button>
+        <button class="Recover-Email-btn"  type="submit">Recover Email</button>
     </form>
     <p id="email-recovery-error" style="color: red;"></p>
     <button id="show-login">Back to Login</button>
