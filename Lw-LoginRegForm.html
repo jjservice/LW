@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOLLIPOP LOGIN</title>
+    <link rel="stylesheet" href="w.css">
+</head>
+<body class="light">
+    <!-- Login Form -->
+    <div class="login-container">
+        <h2 onclick="toggleLights()">LOLLIP<ion-icon name="headset-sharp"></ion-icon>P</h2>
+        <h3>LOGIN</h3>
+        <form id="loginForm">
+            <span><ion-icon name="person"></ion-icon></span><br>
+            <input type="text" id="loginUsername" placeholder="Username" required />
+            <br>
+            <span><ion-icon name="mail"></ion-icon></span><br>
+            <input type="email" id="loginEmail" placeholder="Email" required />
+            <br>
+            <span><ion-icon name="lock-closed"></ion-icon></span><br>
+            <input type="password" id="loginPassword" placeholder="Password" required />
+             <br>
+            <button class="login-btn" type="submit">Login</button>
+        </form>
+        <p id="login-error-message"></p>
+        <button id="show-register">Don't have an account? Register Now!</button><br>
+        <a href="#" id="show-password-recovery">Forgot Password?</a>
+        <a href="#" id="show-email-recovery">Can't Access Email?</a>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="register-container" style="display:none;">
+        <h2>Register!</h2>
+        <form id="registerForm">
+            <input type="text" id="registerUsername" placeholder="Username" required />
+            <input type="email" id="registerEmail" placeholder="Email" required />
+            <input type="email" id="registerEmailConfirm" placeholder="Confirm Email" required />
+            <input type="password" id="registerPassword" placeholder="Password" required />
+            <input type="password" id="registerPasswordConfirm" placeholder="Confirm Password" required />
+            <button class="Register-btn" type="submit">Register</button>
+        </form>
+        <p id="register-error-message"></p>
+        <button id="show-login">Already have an account? Login</button>
+          <!-- Add links in your login form -->
+    </div>
+
+    <!-- Password Recovery Form -->
+<div class="password-recovery-container" style="display: none;">
+    <h2 class="Recover-Pass-Title">Password Recovery</h2>
+    <form id="passwordRecoveryForm">
+        <label class="Enter-Email" for="recoveryEmail">Enter your email:</label>
+        <input class="recoveryEmail-css" type="email" id="recoveryEmail" required>
+        <button type="submit" id="Recovery-Link-Btn">Send Recovery Link</button>
+    </form>
+    <p id="password-recovery-error" style="color: red;"></p>
+    <p id="jj">JJPoweredIT<span><ion-icon name="bonfire-outline"></ion-icon></span></p>
+</div>
+
+<!-- Email Recovery Form -->
+<div class="email-recovery-container" style="display: none;">
+    <h2 class="Email-Recovery-Main-Title">Email Recovery</h2>
+    <form id="emailRecoveryForm">
+        <label  class="Email-Recovery-title" for="emailRecoveryEmail">Enter your email:</label>
+        <input type="email" id="emailRecoveryEmail" required>
+        <button class="Recover-Email-btn"  type="submit">Recover Email</button>
+    </form>
+    <p id="email-recovery-error" style="color: red;"></p>
+    <p id="jj">JJPoweredIT<span><ion-icon name="bonfire-outline"></ion-icon></span></p>
+</div>
+
+    <!-- Music Player -->
+    <div class="music-player-container" style="display:none;">
+        <h1 onclick="toggleLights()">LOLLIP<span><ion-icon name="headset-sharp"></ion-icon></span>P</h1>
+
+    <p id="jj">JJPoweredIT<span><ion-icon name="bonfire-outline"></ion-icon></span></p>
+  
+    <h3>"Welcome to the experience, <span id="user-name"></span>!"</h3>
+    <form>
+        <a href="https://jjservice.github.io/L2/1.html"><input class="button" type="button" value="GO"></a>
+    </form>
+    <p id="jj2">LollitA<ion-icon name="bonfire-sharp"></ion-icon></p>
+        </div>
+    </div>
+</body>
+<script src="w4.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
