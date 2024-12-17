@@ -6,9 +6,9 @@
 <head>
     <title>LOLLIPOP</title>
 </head>
-<body>
+<body class="light">
 
-    <h1>LOLLIP<span><ion-icon name="headset-sharp"></ion-icon></span>P</h1>
+    <h1 onclick="toggleLights()">LOLLIP<span><ion-icon name="headset-sharp"></ion-icon></span>P</h1>
 
     <p id="jj">JJPoweredIT<span><ion-icon name="bonfire-outline"></ion-icon></span></p>
   
@@ -21,6 +21,13 @@
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    
+<script>
+    ///Light Section////
+
+function toggleLights(){
+    const body = document.querySelector('body');
+    body.classList.toggle('light');
+}
+</script>
 </body>
 </html>

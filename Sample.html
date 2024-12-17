@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Check if a user is logged in when loading the page and show the correct content
+        document.addEventListener('DOMContentLoaded', function() {
+            const loggedInUser = JSON.parse(sessionStorage.getItem('loggedInUser'));
+        
+            if (loggedInUser) {
+                // User is logged in, display their username in the welcome message
+                document.getElementById('user-name').textContent = loggedInUser.username;
+                
+                // Show the music player and hide the login form
+                document.querySelector('.music-player-container').style.display = 'block';
+                document.querySelector('.login-container').style.display = 'none';
+            } else {
+                // User is not logged in, redirect to login page
+                window.location.href = 'w.html'; // or whatever the login page is
+            }
+        });
+        </script>
+</body>
+</html>
+    

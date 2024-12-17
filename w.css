@@ -438,3 +438,15 @@ body.light h3{
    
 }
 
+#logoutButton{
+   border: none;
+   padding: 5px;
+   font-size: 16px;
+   border-radius: 8px;
+   border-bottom: 1px solid wheat;
+   box-shadow: 0px 2px 8px darkgray;
+   color: white;
+   background-color: darkblue;
+   
+}
+
