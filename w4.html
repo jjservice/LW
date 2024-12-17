@@ -70,20 +70,51 @@
 <a href="#" id="show-password-recovery">Forgot Password?</a>
 <a href="#" id="show-email-recovery">Can't Access Email?</a>
 
-    <!-- Music Player -->
-    <div class="music-player-container" style="display:none;">
-        <h1 onclick="toggleLights()">LOLLIP<span><ion-icon name="headset-sharp"></ion-icon></span>P</h1>
+<!-- Music Player (Dashboard) -->
+<div class="music-player-container" style="display:none;">
+    <h1 onclick="toggleLights()">LOLLIP<span><ion-icon name="headset-sharp"></ion-icon></span>P</h1>
 
     <p id="jj">JJPoweredIT<span><ion-icon name="bonfire-outline"></ion-icon></span></p>
-  
+
     <h3>"Welcome to the experience, <span id="user-name"></span>!"</h3>
+    
+    <!-- Logout button -->
+    <button id="logoutBtn">Logout</button>
+    
     <form>
         <a href="https://jjservice.github.io/L2/1.html"><input class="button" type="button" value="GO"></a>
     </form>
     <p id="jj2">LollitA<ion-icon name="bonfire-sharp"></ion-icon></p>
-        </div>
-    </div>
+</div>
+<script>
+// Check if a user is logged in when loading the page and show the correct content
+document.addEventListener('DOMContentLoaded', function() {
+    const loggedInUser = JSON.parse(sessionStorage.getItem('loggedInUser'));
+
+    if (loggedInUser) {
+        // User is logged in, display their username in the welcome message
+        document.getElementById('user-name').textContent = loggedInUser.username;
+        
+        // Show the music player and hide the login form
+        document.querySelector('.music-player-container').style.display = 'block';
+        document.querySelector('.login-container').style.display = 'none';
+    } else {
+        // User is not logged in, redirect to login page
+        window.location.href = 'w4.html'; // or whatever the login page is
+    }
+});
+
+// Handle logout
+document.getElementById('logoutBtn').addEventListener('click', function() {
+    // Clear session storage (log the user out)
+    sessionStorage.removeItem('loggedInUser');
+    
+    // Redirect to login page
+    window.location.href = 'w4.html'; // or whatever the login page is
+});
+</script>
 </body>
+
 <script src="w4.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

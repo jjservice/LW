@@ -13,8 +13,24 @@
 
     <p id="jj">JJPoweredIT<span><ion-icon name="bonfire-outline"></ion-icon></span></p>
 
+     
+  
 
     <a href="https://jjservice.github.io/L2/1.html"><button class="homebtn"><ion-icon name="play"></ion-icon></button></a>
+  
+
+      <!-- Logout button -->
+      <button id="logoutBtn" style="cursor: pointer;">Logout</button>
+    <script>
+    // Handle logout
+    document.getElementById('logoutBtn').addEventListener('click', function() {
+       // Clear session storage (log the user out)
+       sessionStorage.removeItem('loggedInUser');
+       
+       // Redirect to login page
+       window.location.href = 'w.html'; // or whatever the login page is
+   });
+</script>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

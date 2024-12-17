@@ -148,3 +148,55 @@ function toggleLights(){
     const body = document.querySelector('body');
     body.classList.toggle('light');
 }
+
+
+
+
+           // Handle logout
+           document.getElementById('logoutButton').addEventListener('click', function() {
+            // Hide the music player container and show the login container
+            document.querySelector('.music-player-container').style.display = 'none';
+            document.querySelector('.login-container').style.display = 'block';
+            
+            // Reset the user-related UI (if needed)
+            document.getElementById('user-name').textContent = "";
+        
+            // Optionally, you can clear any session or user data if you're using session storage or cookies.
+            // For now, localStorage won't be affected, but if you're storing session-specific data, you can clear it here.
+            // localStorage.removeItem('currentUser'); // Example for clearing session info
+        
+            // Optionally, hide the logout button when logged out
+            document.getElementById('logoutButton').style.display = 'none';
+        });
+        
+        // Show the logout button after a successful login
+        function handleSuccessfulLogin(username) {
+            document.querySelector('.login-container').style.display = 'none';
+            document.querySelector('.music-player-container').style.display = 'block';
+            document.getElementById('user-name').textContent = username;
+            document.getElementById('logoutButton').style.display = 'inline-block'; // Show logout button
+        }
+        
+        // Modify the login form handling to show the logout button
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            const username = document.getElementById('loginUsername').value;
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            let isAuthenticated = false;
+        
+            // Check if username, email, and password match
+            for (let user of users) {
+                if (user.username === username && user.email === email && user.password === password) {
+                    isAuthenticated = true;
+                    break;
+                }
+            }
+        
+            if (isAuthenticated) {
+                handleSuccessfulLogin(username);
+            } else {
+                document.getElementById('login-error-message').textContent = "Invalid username, email, or password.";
+            }
+        });
