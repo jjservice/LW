@@ -1,3 +1,4 @@
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyCBDffMAaJdgb1_Xsfa4zhoYLYAhxmrZVo",
@@ -22,9 +23,10 @@ const firebaseConfig = {
   
     var name = getElementVal("name");
     var emailid = getElementVal("emailid");
+    var msgContent = getElementVal("msgContent");
     var phone = getElementVal("phone");
   
-    saveMessages(name, emailid, phone);
+    saveMessages(name, emailid, msgContent, phone);
   
     // Enable alert
     document.querySelector(".alert").style.display = "block";
@@ -43,12 +45,13 @@ const firebaseConfig = {
     document.getElementById("contactForm").reset();
   }
   
-  const saveMessages = (name, emailid, phone) => {
+  const saveMessages = (name, emailid, msgContent, phone) => {
     var newContactForm = contactFormDB.push();
   
     newContactForm.set({
       name: name,
       emailid: emailid,
+      msgContent: msgContent,
       phone: phone,
     });
   };
@@ -66,3 +69,4 @@ const firebaseConfig = {
     const body = document.querySelector('body');
     body.classList.toggle('light');
   }
+
