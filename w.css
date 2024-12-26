@@ -30,10 +30,13 @@ h1{
    background-image: url(MusicGig.gif);
    background-position: top;
    background-size: 100%;
+   box-shadow: 0px 2px 9px lightskyblue;
+   transition: 2s ease-in-out;
 }
 body.light h1{
    color: white;
    text-shadow: 2px 2px 4px gold; 
+   box-shadow: 0px 3px 10px black;
    
 }
 h1 ion-icon{
@@ -135,9 +138,14 @@ body.light .container{
    padding: 10px;
    border-radius: 10px;
    border: none;
-   border: 2px solid rgba(255, 217, 0, 0.856);
+   border: 2px solid lightskyblue;
+   box-shadow: 0px 0px 3px lightskyblue;
    font-size: 16px;
    color: white;
+}
+body.light input{
+   border: 2px solid yellow;
+   box-shadow: 0px 0px 3px yellowgreen;
 }
 #emailid{
    margin-bottom: 20px;
@@ -159,11 +167,11 @@ textarea:focus{
 }
 
 
+
  textarea{
    margin: 0% auto;
    width: 90%;
    height: 100px;
-   border: 2px solid gold;
    padding: 10px;
    border-radius: 10px;
    overflow: auto;
@@ -172,6 +180,12 @@ textarea:focus{
    text-shadow: 0px 0px 1px gold;
    margin-bottom: 20px;
    overflow: auto;
+   border: 2px solid lightskyblue;
+   box-shadow: 0px 0px 3px lightskyblue;
+}
+body.light textarea{
+   border: 2px solid yellow;
+   box-shadow: 0px 0px 3px yellowgreen;
 }
 
 button{
