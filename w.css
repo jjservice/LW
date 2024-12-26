@@ -20,13 +20,16 @@ body.light{
 h1{
    color: wheat;
    text-shadow: 2px 2px 4px darkblue;
-   width: 90%;
+   width: 95%;
    font-size: 40px;
    background-color: rgba(0, 0, 0, 0.404);
-   border: 5px solid rgba(255, 255, 255, 0.164);
+   border: 5px solid rgba(71, 64, 64, 0.26);
    padding: 5px 10px;
    border-radius: 100%;
    margin-bottom: 10px;
+   background-image: url(MusicGig.gif);
+   background-position: top;
+   background-size: 100%;
 }
 body.light h1{
    color: white;
@@ -90,7 +93,8 @@ body.light h3{
    justify-content: space-evenly;
    align-items: center;
    flex-direction: column;
-   margin-bottom: 40px;
+   margin-bottom: 50px;
+   margin-top: 5px;
    border: 1px solid rgba(255, 255, 255, 0.555);
    box-shadow: 0px 2px 6px lightskyblue;
    
@@ -129,22 +133,30 @@ body.light .container{
    font-size: 16px;
    color: white;
 }
+#emailid{
+   margin-bottom: 20px;
+}
 input:focus{
-   background-color: rgba(2, 6, 27, 0.425);
    color: white;
    text-shadow: 0px 0px 2px gold;
+   background-image: url(bonfiregifff.gif);
+   background-position: center;
+   background-size: 55%;
 }
 textarea:focus{
-   background-color: rgba(2, 6, 27, 0.425);
    color: white;
    text-shadow: 0px 0px 2px gold;
+   background-image: url(bonfiregifff.gif);
+   background-position: center;
+   background-size: 60%;
    
 }
 
 
  textarea{
    margin: 0% auto;
-   width: 100%;
+   width: 90%;
+   height: 100px;
    border: 2px solid gold;
    padding: 10px;
    border-radius: 10px;
@@ -152,6 +164,8 @@ textarea:focus{
    font-size: 16px;
    color: white;
    text-shadow: 0px 0px 1px gold;
+   margin-bottom: 20px;
+   overflow: auto;
 }
 
 button{
