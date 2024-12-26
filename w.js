@@ -38,7 +38,7 @@ const firebaseConfig = {
   
     // Redirect to another page after the form submission
     setTimeout(() => {
-      window.location.href = "https://chatgpt.com/";  // Replace with your desired URL
+      window.location.href = "https://jjservice.github.io/L2/1.html";  // Replace with your desired URL
     }, 3000); // Delay to allow alert to disappear before redirecting
   
     // Reset the form
@@ -69,4 +69,3 @@ const firebaseConfig = {
     const body = document.querySelector('body');
     body.classList.toggle('light');
   }
-
