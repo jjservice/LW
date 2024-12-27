@@ -51,7 +51,7 @@ h1 ion-icon{
    cursor: pointer;
 }
 h2{
-   color: darkgrey;
+   color: rgba(240, 198, 119, 0.884);
    text-shadow: 2px 2px 2px darkblue;
    font-size: 18px;
    background-color: rgba(255, 255, 255, 0.082);
