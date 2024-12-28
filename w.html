@@ -1,65 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOLLIPOP</title>
-    <link rel="stylesheet" href="w.css">
+  <title>Login</title>
+  <link rel = "stylesheet" href = "LogReg.css">
 </head>
-
 <body>
 
-    
 
-    <div class="container">
+  <div class = "login-container">
+    <div id= "main">
+      <h1>LOLLIP<ion-icon name="headset-sharp"></ion-icon>P</h1>
+      <h2>Welcome to the Experience!</h2>
 
-        <h1>LOLLIP<ion-icon name="headset-sharp"  onclick="toggleLight()"></ion-icon>P</h1>
-    
-        <h2>Hello Boss!</h2>
-
-        <form action="" id="contactForm">
-            <div class="alert">Welcome to the Experience!</div>
-
-            <div class="inputBox">
-                <input style="text-align: center;" type="text" id="name" placeholder="Name:" required />
-            </div>
-
-            <div class="inputBox">
-                <input style="text-align: center;" type="email" id="emailid" placeholder="Email Address:" required />
-            </div>
-
-            <h2>What are you doing here today?</h2>
-
-
-            <div class="inputBox">
-                <textarea id="msgContent" cols="30" rows="10" placeholder="Ex: Looking for videos / Music / Etc / Answer & Log In..." required></textarea>
-            </div>
-
-           
-
-            <button type="submit">Log In</button>
-
-        </form>
+      <span><ion-icon name="mail"></ion-icon></span><br>
+      <input id = "email" type = "text" placeholder = "Email Address" required></input><br>
+      
+      <span><ion-icon name="key"></ion-icon></span><br>
+      <input id = "password" type = "password" placeholder = "Password" required></input><br>
+      
+      <button id = "submit">Log In</button>
+      
+      <p>Don't have an account yet? <br>
+      <button id = "sign-up">Register now!</button></p>
+   
     </div>
 
-    <footer>
-        <p>&copy;<span id="currentYear"></span>JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></p>
-      </footer>
+    <div id = "create-acct" style="display: none;">
+      <h1>Create Account</h1>
+
+      <span><ion-icon name="mail"></ion-icon></span><br>
+      <input id = "email-signup" type = "text" placeholder = "Email *" required></input><br>
+      
+      <span><ion-icon name="mail"></ion-icon></span><br>
+      <input id = "confirm-email-signup" type = "email" placeholder = "Confirm Email *" required></input><br>
+      
+      <span><ion-icon name="key"></ion-icon></span><br>
+      <input id = "password-signup" type = "password" placeholder = "Password *"></input><br>
+      
+      <span><ion-icon name="key"></ion-icon></span><br>
+      <input id = "confirm-password-signup" type = "password" placeholder = "Confirm Password *" required></input><br>
+      <button id = "create-acct-btn">Create Account</button><br>
+      <div class="homebtn"><a href="javascript:history.back()"><ion-icon name="arrow-back-sharp"></ion-icon></a></div>
+    </div>
     
-      <script>
-        // Get the current year
-        const currentYear = new Date().getFullYear();
-        
-        // Find the element with id "currentYear" and set its content to the current year
-        document.getElementById("currentYear").textContent = currentYear;
-      </script>
+  </div>
+  
 
+  <footer>
+    <p>&copy;<label id="currentYear"></label>JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></p>
+  </footer>
+  
+  <script>
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    
+    // Find the element with id "currentYear" and set its content to the current year
+    document.getElementById("currentYear").textContent = currentYear;
+  </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-    <script src="w.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  
+
+  <script type = "module" src = "LogReg.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
