@@ -60,7 +60,7 @@ createacctbtn.addEventListener("click", function() {
         // Signed in 
         const user = userCredential.user;
         // Redirect to another page after successful sign up
-        window.alert("Success! Account created.");
+        window.alert("Account created. Log in & have fun!");
         window.location.href = "/w.html"; // Change to your desired page
       })
       .catch((error) => {
@@ -82,8 +82,8 @@ submitButton.addEventListener("click", function() {
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
-      console.log("Success! Welcome back!");
-      window.alert("Success! Welcome back!");
+      console.log("Welcome to Lollipop!");
+      window.alert("Welcome to Lollipop! Press 'OK' to continue...");
       // Redirect to another page after successful login
       window.location.href = "https://jjservice.github.io/L2/1.html"; // Change to your desired page
     })

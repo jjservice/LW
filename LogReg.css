@@ -58,17 +58,17 @@ h2{
     border-radius: 20px;
     width: 80%;
     border-bottom: 2px solid rgba(245, 222, 179, 0.589);
-    box-shadow: 0px 3px 6px black;
+    box-shadow: 0px 3px 6px rgba(135, 206, 250, 0.308);
 }
 h3{
     margin: 0% auto;
-    width: 95%;
+    width: 85%;
     color: wheat;
     text-shadow: 2px 2px 4px darkblue;
     background-color: rgba(0, 0, 0, 0.507);
     border: 6px solid rgba(255, 255, 255, 0.151);
     padding: 5px;
-    font-size: 30px;
+    font-size: 40px;
     border-radius: 100%;
     box-shadow: 0px 2px 6px lightskyblue;
     margin-top: 5px;
