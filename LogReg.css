@@ -70,7 +70,7 @@ h2{
     height: auto;
     box-shadow: 0px 2px 6px lightskyblue;
     border-radius: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 span{
     font-size: 20px;
@@ -186,9 +186,7 @@ footer{
      }
   
      .homebtn{
-      position: relative;
-      left: 195px;
-      bottom: 0px;
+      margin: 0% auto;
       border-bottom: 1px solid gold;
       box-shadow: 0px 2px 6px blue;
       background-image: url(MusicGig.gif);
@@ -199,7 +197,6 @@ footer{
       justify-content: center;
       padding: 2px 0px;
       opacity: 80%;
-      margin-bottom: 5px;
       cursor: pointer;
     
     }
