@@ -68,7 +68,7 @@ h3{
     background-color: rgba(0, 0, 0, 0.507);
     border: 6px solid rgba(255, 255, 255, 0.151);
     padding: 5px;
-    font-size: 35px;
+    font-size: 30px;
     border-radius: 100%;
     box-shadow: 0px 2px 6px lightskyblue;
     margin-top: 5px;
@@ -94,25 +94,25 @@ h3 ion-icon{
 
 #main{
     margin: 0% auto;
-    margin-top: 10px;
+    margin-top: 15px;
     border: 1px solid white;
     padding: 10px;
     width: 95%;
     height: 500px;
     box-shadow: 0px 2px 6px lightskyblue;
     border-radius: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 #create-acct{
     margin: 0% auto;
-    margin-top: 10px;
+    margin-top: 15px;
     border: 1px solid white;
     padding: 10px;
-    width: 95%;
+    width: 90%;
     height: auto;
     box-shadow: 0px 2px 6px lightskyblue;
     border-radius: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 span{
     font-size: 20px;
@@ -268,7 +268,7 @@ footer{
   @media (min-width: 768px) {
    #main{
     width: 500px;
-    
+
    }
    #create-acct{
     width: 500px;
