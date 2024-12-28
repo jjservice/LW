@@ -24,11 +24,11 @@ h1{
     background-color: rgba(0, 0, 0, 0.507);
     border: 6px solid rgba(255, 255, 255, 0.151);
     padding: 5px;
-    font-size: 45px;
+    font-size: 40px;
     border-radius: 100%;
     box-shadow: 0px 2px 6px lightskyblue;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     cursor: pointer;
     background-image: url(MusicGig.gif);
     background-position: top;
@@ -56,9 +56,40 @@ h2{
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.158);
     border-radius: 20px;
-    width: 70%;
+    width: 80%;
     border-bottom: 2px solid rgba(245, 222, 179, 0.589);
     box-shadow: 0px 3px 6px black;
+}
+h3{
+    margin: 0% auto;
+    width: 95%;
+    color: wheat;
+    text-shadow: 2px 2px 4px darkblue;
+    background-color: rgba(0, 0, 0, 0.507);
+    border: 6px solid rgba(255, 255, 255, 0.151);
+    padding: 5px;
+    font-size: 35px;
+    border-radius: 100%;
+    box-shadow: 0px 2px 6px lightskyblue;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-image: url(MusicGig.gif);
+    background-position: top;
+    background-size: 100%;
+}
+body.light h3{
+    color: white;
+    text-shadow: 2px 2px 4px gold;
+}
+h3 ion-icon{
+    background-image: url(lollipop_3GIF.gif);
+    background-position: center;
+    background-size: cover;
+    color: rgba(255, 217, 0, 0.726);
+    border-bottom: 2px solid wheat;
+    box-shadow: 0px 2px 6px lightskyblue;
+    border-radius: 50%;
 }
 
 #main{
