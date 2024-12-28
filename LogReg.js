@@ -61,7 +61,7 @@ createacctbtn.addEventListener("click", function() {
         const user = userCredential.user;
         // Redirect to another page after successful sign up
         window.alert("Success! Account created.");
-        window.location.href = "/LogReg.html"; // Change to your desired page
+        window.location.href = "/w.html"; // Change to your desired page
       })
       .catch((error) => {
         const errorCode = error.code;
