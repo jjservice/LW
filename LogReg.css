@@ -266,19 +266,11 @@ footer{
 
 
   @media (min-width: 768px) {
-   .login-container{
-    width: 600px;
-    border: none;
-    box-shadow: none;
+   #main{
+    width: 500px;
    }
-   h1{
-    min-width: 60%;
-   }
-   h2{
-    min-width: 40%;
-   }
-   input{
-    min-width: 30%;
+   #create-acct{
+    width: 500px;
    }
   }
 
