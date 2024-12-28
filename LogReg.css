@@ -61,7 +61,18 @@ h2{
     box-shadow: 0px 3px 6px black;
 }
 
-.login-container{
+#main{
+    margin: 0% auto;
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    width: 95%;
+    height: 500px;
+    box-shadow: 0px 2px 6px lightskyblue;
+    border-radius: 40px;
+    margin-bottom: 40px;
+}
+#create-acct{
     margin: 0% auto;
     margin-top: 10px;
     border: 1px solid white;
