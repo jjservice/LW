@@ -268,9 +268,11 @@ footer{
   @media (min-width: 768px) {
    #main{
     width: 500px;
+    
    }
    #create-acct{
     width: 500px;
+    margin-bottom: 45px;
    }
   }
 
