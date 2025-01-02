@@ -144,7 +144,7 @@ input{
     text-shadow: 0px 0px 3px gold;
     box-shadow: 0px 2px 6px rgba(135, 206, 250, 0.849);
 }
-#google-sign-in{
+.google-sign-in{
     padding: 10px;
     border: none;
     margin-bottom: 5px;
@@ -157,7 +157,7 @@ input{
     box-shadow: 0px 3px 8px black;
     color: transparent;
 }
-#google-sign-in:hover{
+.google-sign-in:hover{
     transform: scale(1.10);
     transition: 0.8s;
     box-shadow: 0px 2px 6px lightskyblue;

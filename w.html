@@ -1,29 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=, initial-scale=1.0">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOLLIPOP</title>
+
+
+  <title>Login</title>
+  <link rel = "stylesheet" href = "w-main.css">
 </head>
+
 <body>
-    <script>
-        // Check if a user is logged in when loading the page and show the correct content
-        document.addEventListener('DOMContentLoaded', function() {
-            const loggedInUser = JSON.parse(sessionStorage.getItem('loggedInUser'));
-        
-            if (loggedInUser) {
-                // User is logged in, display their username in the welcome message
-                document.getElementById('user-name').textContent = loggedInUser.username;
-                
-                // Show the music player and hide the login form
-                document.querySelector('.music-player-container').style.display = 'block';
-                document.querySelector('.login-container').style.display = 'none';
-            } else {
-                // User is not logged in, redirect to login page
-                window.location.href = 'https://jjservice.github.io/L2/w.html'; // or whatever the login page is
-            }
-        });
-        </script>
+
+
+    <div id= "main">
+      <h1>LOLLIP<ion-icon name="headset-sharp"></ion-icon>P</h1>
+      <h2>Welcome to the Experience!</h2>
+
+      <span><ion-icon name="mail"></ion-icon></span><br>
+      <input id = "email" type = "text" placeholder = "Email Address" required></input><br>
+      
+      <span><ion-icon name="key"></ion-icon></span><br>
+      <input id = "password" type = "password" placeholder = "Password" required></input><br>
+      
+      <button id = "submit">Log In</button>
+    
+       
+       <div>
+        <a href="GoogleBtn.html"><button class="google-sign-in">Google</button></a>
+        </div>
+      
+      
+      <p>Don't have an account yet?<br>
+      <button id = "sign-up">Register now!</button></p>
+    </div>
+
+
+
+    <div id = "create-acct" style="display: none;">
+      <h3>Register</h3>
+
+      <span><ion-icon name="mail"></ion-icon></span><br>
+      <input id = "email-signup" type = "text" placeholder = "Email *" required></input><br>
+      
+      <span><ion-icon name="mail"></ion-icon></span><br>
+      <input id = "confirm-email-signup" type = "email" placeholder = "Confirm Email *" required></input><br>
+      
+      <span><ion-icon name="key"></ion-icon></span><br>
+      <input id = "password-signup" type = "password" placeholder = "Password *"></input><br>
+      
+      <span><ion-icon name="key"></ion-icon></span><br>
+      <input id = "confirm-password-signup" type = "password" placeholder = "Confirm Password *" required></input><br>
+      <button id = "create-acct-btn">Create Account</button><br>
+      <div class="homebtn"><a href="w.html"><ion-icon name="arrow-back-sharp"></ion-icon></a></div>
+    </div>
+    
+  
+
+  <footer>
+    <p>&copy;<label id="currentYear"></label>JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></p>
+  </footer>
+  
+  <script>
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    
+    // Find the element with id "currentYear" and set its content to the current year
+    document.getElementById("currentYear").textContent = currentYear;
+  </script>
+
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1V39TEVDM6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1V39TEVDM6');
+</script>
+
+
+  
+  <script type = "module" src ="w.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-    
