@@ -98,7 +98,7 @@ h3 ion-icon{
     border: 1px solid white;
     padding: 10px;
     width: 95%;
-    height: 500px;
+    height: auto;
     box-shadow: 0px 2px 6px lightskyblue;
     border-radius: 40px;
     margin-bottom: 45px;
@@ -143,6 +143,10 @@ input{
     color: white;
     text-shadow: 0px 0px 3px gold;
     box-shadow: 0px 2px 6px rgba(135, 206, 250, 0.849);
+}
+#submit:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
 }
 .google-sign-in{
     padding: 10px;
