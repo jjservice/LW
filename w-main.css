@@ -1,0 +1,299 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+body{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    height: auto;
+    background: linear-gradient(to right, black,darkblue,maroon,black);
+}
+body.light{
+    background: linear-gradient(to right, black,darkblue,lightgreen,maroon,black);
+}
+h1{
+    margin: 0% auto;
+    width: 90%;
+    color: wheat;
+    text-shadow: 2px 2px 4px darkblue;
+    background-color: rgba(0, 0, 0, 0.507);
+    border: 6px solid rgba(255, 255, 255, 0.151);
+    padding: 5px;
+    font-size: 40px;
+    border-radius: 100%;
+    box-shadow: 0px 2px 6px lightskyblue;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    background-image: url(MusicGig.gif);
+    background-position: top;
+    background-size: 100%;
+}
+body.light h1{
+    color: white;
+    text-shadow: 2px 2px 4px gold;
+}
+h1 ion-icon{
+    background-image: url(lollipop_3GIF.gif);
+    background-position: center;
+    background-size: cover;
+    color: rgba(255, 217, 0, 0.726);
+    border-bottom: 2px solid wheat;
+    box-shadow: 0px 2px 6px lightskyblue;
+    border-radius: 50%;
+}
+h2{
+    margin: 0% auto;
+    margin-bottom: 10px;
+    color: rgb(219, 195, 195);
+    text-shadow: 2px 2px 2px darkblue;
+    font-size: 25px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.158);
+    border-radius: 20px;
+    width: 80%;
+    border-bottom: 2px solid rgba(245, 222, 179, 0.589);
+    box-shadow: 0px 3px 6px rgba(135, 206, 250, 0.308);
+}
+h3{
+    margin: 0% auto;
+    width: 85%;
+    color: wheat;
+    text-shadow: 2px 2px 4px darkblue;
+    background-color: rgba(0, 0, 0, 0.507);
+    border: 6px solid rgba(255, 255, 255, 0.151);
+    padding: 5px;
+    font-size: 40px;
+    border-radius: 100%;
+    box-shadow: 0px 2px 6px lightskyblue;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-image: url(MusicGig.gif);
+    background-position: top;
+    background-size: 100%;
+}
+body.light h3{
+    color: white;
+    text-shadow: 2px 2px 4px gold;
+}
+h3 ion-icon{
+    background-image: url(lollipop_3GIF.gif);
+    background-position: center;
+    background-size: cover;
+    color: rgba(255, 217, 0, 0.726);
+    border-bottom: 2px solid wheat;
+    box-shadow: 0px 2px 6px lightskyblue;
+    border-radius: 50%;
+}
+
+#main{
+    margin: 0% auto;
+    margin-top: 15px;
+    border: 1px solid white;
+    padding: 10px;
+    width: 95%;
+    height: 500px;
+    box-shadow: 0px 2px 6px lightskyblue;
+    border-radius: 40px;
+    margin-bottom: 45px;
+}
+#create-acct{
+    margin: 0% auto;
+    margin-top: 15px;
+    border: 1px solid white;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    box-shadow: 0px 2px 6px lightskyblue;
+    border-radius: 40px;
+    margin-bottom: 45px;
+}
+span{
+    font-size: 20px;
+    color: wheat;
+}
+input{
+    margin: 0% auto;
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid gold;
+}
+#password{
+    margin-bottom: 20px;
+}
+#submit{
+    margin: 0% auto;
+    padding: 6px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: blue;
+    color: white;
+    text-shadow: 0px 0px 3px gold;
+    box-shadow: 0px 2px 6px rgba(135, 206, 250, 0.849);
+}
+#google-sign-in{
+    padding: 10px;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    background-image: url(googlegif2.gif);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 8px black;
+    color: transparent;
+}
+#google-sign-in:hover{
+    transform: scale(1.10);
+    transition: 0.8s;
+    box-shadow: 0px 2px 6px lightskyblue;
+}
+#create-acct-btn{
+    margin: 0% auto;
+    padding: 6px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: green;
+    color: white;
+    text-shadow: 0px 0px 3px gold;
+}
+#create-acct-btn:hover{
+    background-color: rgb(23, 197, 23);
+    
+}
+button{
+    cursor: pointer;
+    border: none;
+
+}
+
+p{
+    font-size: 18px;
+}
+#sign-up{
+    margin: 0% auto;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    color: yellow;
+    text-shadow: 2px 2px 2px darkblue;
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+#sign-up:hover{
+    color: rgb(68, 240, 68);
+    text-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin: 0% auto;
+    flex-direction: column;
+    bottom: 0%;
+    left: 0;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding: 5px;
+    color: rgb(48, 47, 47);
+  
+     }
+     footer p{
+      width: 200px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.062);
+      padding: 5px;
+      border-radius: 20px;
+     }
+     footer ion-icon{
+      color: rgba(255, 217, 0, 0.411);
+     }
+  
+     .homebtn{
+      margin: 0% auto;
+      border-bottom: 1px solid gold;
+      box-shadow: 0px 2px 6px blue;
+      background-image: url(MusicGig.gif);
+      background-position: center;
+      background-size: 100%;
+      border-radius: 7px;
+      width: 50px;
+      justify-content: center;
+      padding: 2px 0px;
+      opacity: 80%;
+      cursor: pointer;
+    
+    }
+    .homebtn ion-icon{
+      margin: 0% auto;
+      color: rgba(255, 217, 0, 0.568);
+      justify-content: center;
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      
+    }
+    .homebtn ion-icon:hover{
+      color: gold;
+    }
+    .homebtn:hover{
+      color: gold;
+      transition: color 0.5s ease;
+      box-shadow: 2px 2px 20px gold;
+      transform: scale(1.10);
+      transition: 0.5s;
+      cursor: pointer;
+    
+    }
+   
+
+
+  @media (min-width: 768px) {
+   #main{
+    width: 500px;
+
+   }
+   #create-acct{
+    width: 500px;
+    margin-bottom: 45px;
+   }
+  }
+
+
