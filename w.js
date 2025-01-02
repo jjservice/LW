@@ -3,15 +3,14 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAoYFWAmoJJCDcfcnOncKgimEv3ynVF_ak",
-  authDomain: "log-reg-3335e.firebaseapp.com",
-  projectId: "log-reg-3335e",
-  storageBucket: "log-reg-3335e.firebasestorage.app",
-  messagingSenderId: "449562064667",
-  appId: "1:449562064667:web:52db498443a55ebcf145be",
-  measurementId: "G-1V39TEVDM6"
+  apiKey: "AIzaSyBTyM35RxVniq5Z0JA_13O8ghXteJPzW-U",
+  authDomain: "login-4e384.firebaseapp.com",
+  projectId: "login-4e384",
+  storageBucket: "login-4e384.firebasestorage.app",
+  messagingSenderId: "236195241032",
+  appId: "1:236195241032:web:d4fe01209b39279cb70c7d",
+  measurementId: "G-5PCCK6PMXF"
 };
-
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
